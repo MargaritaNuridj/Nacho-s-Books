@@ -1,3 +1,8 @@
+windows.onload = function() {
+  alert("We are checking for book matches!")
+}
+
+
 alert("We are checking for book matches!!")
 
 var books = [
