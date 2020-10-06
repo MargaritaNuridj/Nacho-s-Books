@@ -5,12 +5,14 @@
 <body>
 <h1>Homepage</h1>
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src='getBooks.js'></script>
   <p>Search for a book below!!</p>
   <input id='search'></input>
   <button class='button' id='submit' onclick='getBooks()'>Submit</button>
   <script>
     function getBooks() {
       alert("Finding books...")
+      var search = document.getElementById("search")
     }
   </script>
   <style>
