@@ -12,6 +12,12 @@
   <input id='search'></input>
   <button class='button' id='submit' onclick='getBooks()'>Submit</button>
   <script>
+    function displayText(text) {
+      $("body").append("<p>" + text + "</p>")
+    }
+    function displayHeader(header, text) {
+      $("body").append("<" + header +  ">" + text + "</" + header + ">")
+    }
     function getBooks() {
       alert("Finding books...")
       var search = document.getElementById("search")
@@ -20,13 +26,18 @@
       var books = [
         "Python-printing text":"This book teaches how to print text in Python, and other useful resources that can be used to print text.",
         "Book 2":"This is book number 2"
-      ]
+      ]'
+      
+      
+      displayHeader("h2", "Results:")
+      
+      
       
       
       
        if (search in books) {
         alert("Almost done...")
-        print(books[search])
+        displayText(books[search])
       }
 
     }
